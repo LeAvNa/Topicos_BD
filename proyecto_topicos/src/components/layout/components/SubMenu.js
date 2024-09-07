@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import MenuItem from './MenuItem'; // Componente personalizado de menú
 
@@ -14,21 +15,27 @@ function SubMenu({ items = [], onClick }) {
         key={item.etiqueta}
         className={`submenu-item ${item.Hijos?.length > 0 ? 'has-submenu' : ''} ${activeMenu === item.etiqueta ? 'active' : ''}`}
       >
-        <a
-          className="submenu-link"
-          href={item.Hijos ? "#." : item.Path}
-          onClick={(e) => {
-            if (item.Hijos?.length > 0) {
+        {item.Hijos?.length > 0 ? (
+          <a
+            className="submenu-link"
+            onClick={(e) => {
               e.preventDefault();
               handleMenuClick(item.etiqueta);
-            } else {
-              onClick(item.etiqueta);
-            }
-          }}
-        >
-          <span className="submenu-icon"><i className={`mdi ${item.icon}`}></i></span>
-          <span className="submenu-text">{item.etiqueta}</span>
-        </a>
+            }}
+          >
+            <span className="submenu-icon"><i className={`mdi ${item.icon}`}></i></span>
+            <span className="submenu-text">{item.etiqueta}</span>
+          </a>
+        ) : (
+          <Link
+            to={item.Path}
+            className="submenu-link"
+            onClick={() => onClick(item.etiqueta)}
+          >
+            <span className="submenu-icon"><i className={`mdi ${item.icon}`}></i></span>
+            <span className="submenu-text">{item.etiqueta}</span>
+          </Link>
+        )}
         {item.Hijos?.length > 0 && (
           <div className={`submenu-children ${activeMenu === item.etiqueta ? 'show' : 'hide'}`}>
             {item.Hijos.map((hijo) => (

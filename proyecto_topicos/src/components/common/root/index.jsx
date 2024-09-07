@@ -15,19 +15,20 @@ const Root = () => {
     <React.StrictMode>
       <BrowserRouter>
         <Routes>
-          <Route element={ <App path="/"/> } path='/' exact />
-          <Route element={ <App path="Usuarios"/> } path="Usuarios" exact />
-          <Route element={ <App path="Role"/> } path="Role" exact />
-          <Route element={ <App path="Inmobiliarias"/> } path="Inmobiliarias" exact />
-          <Route element={ <App path="Remates" /> } path="Remates" exact />
-          <Route element={ <App path="Adjudicados" /> } path="Adjudicados" exact />
-          <Route element={ <App path="Litigiosos" />} path="Litigiosos" exact />
-          <Route element={ <App path="Litigios" />} path="Litigios" exact />
-          <Route element={ <App path="Propiedades" />} path="Propiedades" exact />
-          <Route element={ <App path="Reportes" />} path="Reportes" exact />
+          <Route element={<App path="/" />} path='/' exact />
+          <Route element={<App path="/sucursal"/>} path='sucursal' exact />
+          <Route element={<App path="Usuarios" />} path="Usuarios" exact />
+          <Route element={<App path="Role" />} path="Role" exact />
+          <Route element={<App path="Inmobiliarias" />} path="Inmobiliarias" exact />
+          <Route element={<App path="Remates" />} path="Remates" exact />
+          <Route element={<App path="Adjudicados" />} path="Adjudicados" exact />
+          <Route element={<App path="Litigiosos" />} path="Litigiosos" exact />
+          <Route element={<App path="Litigios" />} path="Litigios" exact />
+          <Route element={<App path="Propiedades" />} path="Propiedades" exact />
+          <Route element={<App path="Reportes" />} path="Reportes" exact />
         </Routes>
       </BrowserRouter>
-    </React.StrictMode>      
+    </React.StrictMode>
   );
 }
 

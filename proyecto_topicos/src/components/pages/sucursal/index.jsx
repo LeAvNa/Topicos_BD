@@ -16,7 +16,7 @@ const Sucursales = () => {
   }, []);
   
   const mostrarTabla = () => {
-    navigate('/sucursales');
+    navigate('/sucursal');
     setEsEditar(false);
     setMostrarFormulario(false);
   };
@@ -26,9 +26,9 @@ const Sucursales = () => {
     setMostrarFormulario(true);
 
     if (esEditar) {
-      navigate('/sucursales/modificar');
+      navigate('/sucursal/modificar');
     } else {
-      navigate('/sucursales/guardar');
+      navigate('/sucursal/guardar');
     }
   };
 

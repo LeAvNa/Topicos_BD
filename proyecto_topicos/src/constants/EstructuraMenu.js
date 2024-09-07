@@ -1,10 +1,11 @@
+
 export const EstructuraMenu = {
   "Navegacion": {
     "etiqueta": "Navegación",
     "items": [
       {
         "etiqueta": "Inicio",
-        "Path": "/",
+        "Path": "/", 
         "icon": "home",
         "Hijos": []
       }
@@ -16,18 +17,18 @@ export const EstructuraMenu = {
     "items": [
       {
         "etiqueta": "Sucursales",
-        "Path": "#",
-        "icon": "",
+        "Path": "",  
+        "icon": "office-building",
         "Hijos": [
           {
             "etiqueta": "Sucursal 1",
-            "Path": "/sucursal",
-            "icon": "",
+            "Path": "/sucursal",  
+            "icon": "store",
             "Hijos": []
           }
         ]
       }
     ]
   },
-  // Agrega otras categorías y elementos aquí
+  // Añade otras categorías y elementos adicionales según sea necesario
 };
