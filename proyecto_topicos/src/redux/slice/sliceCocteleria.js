@@ -47,4 +47,4 @@ const CocteleriaSlice = createSlice({
   },
 });
 
-export const getAuctionReducer = AuctionSlice.reducer;
+export const getCocteleriaReducer = CocteleriaSlice.reducer;

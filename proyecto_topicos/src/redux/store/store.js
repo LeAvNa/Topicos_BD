@@ -1,25 +1,23 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { getUserReducer } from "../slice/usersSlice";
-import { getRoleReducer } from "../slice/RolesSlice";
-import { getRealStateReducer } from "../slice/Real_StateSlice";
-import { getAuctionReducer } from "../slice/auctionSlice";
-import { getAwardedReducer } from "../slice/awardedSlice";
-import { getLitigationReducer } from "../slice/litigationSlice";
-import { getLitigiousReducer } from "../slice/litigiousSlice";
-import { getPropertyReducer } from "../slice/propertySlice";
-import { getReportReducer } from "../slice/reportSlice"
+import { getClienteReducer } from "../slice/sliceCliente";
+import { getCocteleriaReducer } from "../slice/sliceCocteleria";
+import { getEmpleadoReducer } from "../slice/sliceEmpleado";
+import { getInventarioReducer } from "../slice/sliceInventario";
+import { getProductoReducer } from "../slice/sliceProducto";
+import { getProveedorReducer } from "../slice/sliceProveedor";
+import { getSucursalReducer } from "../slice/sliceSucursal";
+import { getVentaReducer } from "../slice/sliceVenta";
 
 export default configureStore({
     reducer:{
-        getUsers: getUserReducer,
-        getRole: getRoleReducer,
-        getRealState: getRealStateReducer,
-        getAuction: getAuctionReducer,
-        getAwarded: getAwardedReducer,
-        getLitigation: getLitigationReducer,
-        getLitigious: getLitigiousReducer,
-        getProperty: getPropertyReducer,
-        getReport: getReportReducer
+        getCliente: getClienteReducer,
+        getCocteleria: getCocteleriaReducer,
+        getEmpleado: getEmpleadoReducer,
+        getInventario: getInventarioReducer,
+        getProducto: getProductoReducer,
+        getProveedor: getProveedorReducer,
+        getSucursal: getSucursalReducer,
+        getVenta: getVentaReducer,
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware({ serializableCheck: false })
 });
