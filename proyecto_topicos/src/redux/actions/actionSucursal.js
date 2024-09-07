@@ -1,11 +1,11 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const getAuction = createAsyncThunk("auctions/getAuction",
+export const listarSucursal = createAsyncThunk("sucursal/listarSucursal",
     async () => {
         try
         {      
-            const resp = await axios.get('http://endingapi2.somee.com/api/Remate/lista');
+            const resp = await axios.get('');
 
             return resp.data;
         } 
@@ -16,41 +16,11 @@ export const getAuction = createAsyncThunk("auctions/getAuction",
     }
 );
 
-export const getAuctionUnique = createAsyncThunk("auctions/getAuctionUnique",
-    async (idRemate, {rejectWithValue}) => {
-        try
-        {      
-            const resp = await axios.get('http://endingapi2.somee.com/api/Remate/Obtener/'+idRemate);
-
-            return resp.data;
-        } 
-        catch (error) 
-        {
-            return rejectWithValue(`Error: ${error.message}`);
-        }
-    }
-);
-
-export const addAuction = createAsyncThunk("Auctions/addAuction",
-    async (data, {rejectWithValue}) => {
-        try
-        {      
-            const resp = await axios.post('http://endingapi2.somee.com/api/Remate/Guardar', data);
-
-            return resp.data;
-        } 
-        catch (error) 
-        {
-            return rejectWithValue(`Error: ${error.message}`);
-        }
-    }
-);
-
-export const deleteAuctions = createAsyncThunk("auctions/deleteAuctions",
+export const obtenerSurcursal = createAsyncThunk("sucursal/obtenerSucursal",
     async (id, {rejectWithValue}) => {
         try
         {      
-            const resp = await axios.delete('http://endingapi2.somee.com/api/Remate/Eliminar/'+id);
+            const resp = await axios.get('/'+id);
 
             return resp.data;
         } 
@@ -61,11 +31,41 @@ export const deleteAuctions = createAsyncThunk("auctions/deleteAuctions",
     }
 );
 
-export const editAuction = createAsyncThunk("auctions/editAuctions",
+export const agregarSucursal = createAsyncThunk("sucursal/agregarSucursal",
     async (data, {rejectWithValue}) => {
         try
         {      
-            const resp = await axios.put(`http://endingapi2.somee.com/api/Remate/Editar`, data);
+            const resp = await axios.post('', data);
+
+            return resp.data;
+        } 
+        catch (error) 
+        {
+            return rejectWithValue(`Error: ${error.message}`);
+        }
+    }
+);
+
+export const eliminarSucursal = createAsyncThunk("sucursal/eliminarSucursal",
+    async (id, {rejectWithValue}) => {
+        try
+        {      
+            const resp = await axios.delete('/'+id);
+
+            return resp.data;
+        } 
+        catch (error) 
+        {
+            return rejectWithValue(`Error: ${error.message}`);
+        }
+    }
+);
+
+export const editarSucursal = createAsyncThunk("sucursal/editarSucursal",
+    async (data, {rejectWithValue}) => {
+        try
+        {      
+            const resp = await axios.put(``, data);
 
             return resp.data;
         } 

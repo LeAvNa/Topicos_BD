@@ -1,6 +1,6 @@
 export const EstructuraMenu = {
   "Navegacion": {
-    "etiqueta": "",
+    "etiqueta": "Navegación",
     "items": [
       {
         "etiqueta": "Inicio",

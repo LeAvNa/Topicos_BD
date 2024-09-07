@@ -1,11 +1,11 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const getProperty = createAsyncThunk("property/getProperty",
+export const listarVenta = createAsyncThunk("venta/listarVenta",
     async () => {
         try
         {      
-            const resp = await axios.get('http://endingapi2.somee.com/api/Propiedad/lista');
+            const resp = await axios.get('');
 
             return resp.data;
         } 
@@ -16,11 +16,11 @@ export const getProperty = createAsyncThunk("property/getProperty",
     }
 );
 
-export const getPropertyUnique = createAsyncThunk("property/getPropertyUnique",
+export const obtenerVenta = createAsyncThunk("venta/obtenerVenta",
     async (id, {rejectWithValue}) => {
         try
         {      
-            const resp = await axios.get('http://endingapi2.somee.com/api/Propiedad/Obtener/'+id);
+            const resp = await axios.get('/'+id);
 
             return resp.data;
         } 
@@ -31,11 +31,11 @@ export const getPropertyUnique = createAsyncThunk("property/getPropertyUnique",
     }
 );
 
-export const addProperty = createAsyncThunk("property/addProperty",
+export const agregarVenta = createAsyncThunk("venta/agregarVenta",
     async (data, {rejectWithValue}) => {
         try
         {      
-            const resp = await axios.post('http://endingapi2.somee.com/api/Propiedad/Guardar', data);
+            const resp = await axios.post('', data);
 
             return resp.data;
         } 
@@ -46,11 +46,11 @@ export const addProperty = createAsyncThunk("property/addProperty",
     }
 );
 
-export const deleteProperty = createAsyncThunk("property/deleteProperty",
+export const eliminarVenta = createAsyncThunk("venta/eliminarVenta",
     async (id, {rejectWithValue}) => {
         try
         {      
-            const resp = await axios.delete('http://endingapi2.somee.com/api/Propiedad/Eliminar/'+id);
+            const resp = await axios.delete('/'+id);
 
             return resp.data;
         } 
@@ -61,11 +61,11 @@ export const deleteProperty = createAsyncThunk("property/deleteProperty",
     }
 );
 
-export const editProperty = createAsyncThunk("property/editProperty",
+export const editarVenta = createAsyncThunk("venta/editarVenta",
     async (data, {rejectWithValue}) => {
         try
         {      
-            const resp = await axios.put('http://endingapi2.somee.com/api/Propiedad/Editar', data);
+            const resp = await axios.put(``, data);
 
             return resp.data;
         } 

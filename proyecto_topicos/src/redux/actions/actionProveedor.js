@@ -1,11 +1,11 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const getRoles = createAsyncThunk("users/getRoles",
+export const listarProveedor = createAsyncThunk("proveedor/listarProveedor",
     async () => {
         try
         {      
-            const resp = await axios.get('http://187.189.158.186:7777/Roles');
+            const resp = await axios.get('');
 
             return resp.data;
         } 
@@ -16,11 +16,11 @@ export const getRoles = createAsyncThunk("users/getRoles",
     }
 );
 
-export const getRoleUnique = createAsyncThunk("users/getRoleUnique",
+export const obtenerProveedor = createAsyncThunk("proveedor/obtenerProveedor",
     async (id, {rejectWithValue}) => {
         try
         {      
-            const resp = await axios.get('http://187.189.158.186:7777/Role/'+id);
+            const resp = await axios.get('/'+id);
 
             return resp.data;
         } 
@@ -31,11 +31,26 @@ export const getRoleUnique = createAsyncThunk("users/getRoleUnique",
     }
 );
 
-export const deleteRole = createAsyncThunk("users/deleteRole",
+export const agregarProveedor = createAsyncThunk("proveedor/agregarProveedor",
+    async (data, {rejectWithValue}) => {
+        try
+        {      
+            const resp = await axios.post('', data);
+
+            return resp.data;
+        } 
+        catch (error) 
+        {
+            return rejectWithValue(`Error: ${error.message}`);
+        }
+    }
+);
+
+export const eliminarProveedor = createAsyncThunk("proveedor/eliminarProveedor",
     async (id, {rejectWithValue}) => {
         try
         {      
-            const resp = await axios.delete('http://187.189.158.186:7777/Role/'+id);
+            const resp = await axios.delete('/'+id);
 
             return resp.data;
         } 
@@ -46,26 +61,11 @@ export const deleteRole = createAsyncThunk("users/deleteRole",
     }
 );
 
-export const addRole = createAsyncThunk("users/addRole",
+export const editarProveedor = createAsyncThunk("proveedor/editarProveedor",
     async (data, {rejectWithValue}) => {
         try
         {      
-            const resp = await axios.post('http://187.189.158.186:7777/Role', data);
-
-            return resp.data;
-        } 
-        catch (error) 
-        {
-            return rejectWithValue(`Error: ${error.message}`);
-        }
-    }
-);
-
-export const editRole = createAsyncThunk("users/editRole",
-    async (data, {rejectWithValue}) => {
-        try
-        {      
-            const resp = await axios.put('http://187.189.158.186:7777/Role/'+data.id, data);
+            const resp = await axios.put(``, data);
 
             return resp.data;
         } 
