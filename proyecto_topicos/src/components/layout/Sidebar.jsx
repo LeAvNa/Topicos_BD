@@ -1,69 +1,57 @@
-import React from "react";
-import {
-  CDBSidebar,
-  CDBSidebarContent,
-  CDBSidebarFooter,
-  CDBSidebarHeader,
-  CDBSidebarMenu,
-  CDBSidebarMenuItem,
-} from "cdbreact";
-import { NavLink } from "react-router-dom";
-import { EstructuraMenu } from "../../constants/EstructuraMenu"; // Asegúrate de importar correctamente
+import React, { useState, useEffect } from 'react';
+import { useLocation, Link } from 'react-router-dom';
+import { EstructuraMenu } from '../../constants/EstructuraMenu';
+import SubMenu from './components/SubMenu';
+import "./Sidebar.css";
 
-const Sidebar = () => {
-  // Obtenemos las claves de las categorías principales del menú
-  const menuKeys = EstructuraMenu ? Object.keys(EstructuraMenu) : [];
+function Sidebar() {
+  const location = useLocation();
+  const [activeMenu, setActiveMenu] = useState('Inicio');
+
+  useEffect(() => {
+    const currentMenu = Object.values(EstructuraMenu)
+      .flatMap((cat) => cat.items)
+      .find((item) => item.Path === location.pathname)?.etiqueta
+      || localStorage.getItem('activeMenu')
+      || 'Inicio';
+
+    setActiveMenu(currentMenu);
+    localStorage.setItem('activeMenu', currentMenu);
+  }, [location]);
+
+  const handleMenuClick = (menuText) => {
+    setActiveMenu(menuText);
+    localStorage.setItem('activeMenu', menuText);
+  };
 
   return (
-    <CDBSidebar textColor="#fff" backgroundColor="#333">
-      <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
-        <a href="/" className="text-decoration-none" style={{ color: "inherit" }}>
-          Tópicos
-        </a>
-      </CDBSidebarHeader>
-
-      <CDBSidebarContent className="sidebar-content">
-        <CDBSidebarMenu>
-          {/* Iteramos sobre las categorías principales de EstructuraMenu */}
-          {menuKeys.map((categoryKey) => {
-            const category = EstructuraMenu[categoryKey]; // Obtenemos la categoría actual
-
-            return (
-              <React.Fragment key={categoryKey}>
-                {/* Renderizamos el encabezado del menú */}
-                <div className="menu-header">
-                  <span className="menu-text">{category.etiqueta}</span>
-                </div>
-
-                {/* Iteramos sobre los elementos del submenú */}
-                {category.items?.map((item, index) => (
-                  <NavLink
-                    key={index}
-                    exact
-                    to={item.Path}
-                    activeClassName="activeClicked"
-                  >
-                    <CDBSidebarMenuItem icon={item.icon}>
-                      {item.etiqueta}
-                    </CDBSidebarMenuItem>
-                  </NavLink>
-                ))}
-
-                {/* Separador entre los diferentes menús */}
-                <div className="menu-divider"></div>
-              </React.Fragment>
-            );
-          })}
-        </CDBSidebarMenu>
-      </CDBSidebarContent>
-
-      <CDBSidebarFooter style={{ textAlign: "center" }}>
-        <div style={{ padding: "20px 5px" }}>
-          {/* Aquí puedes agregar cualquier contenido adicional para el footer */}
+    <div id="sidebar" className="app-sidebar">
+      <div className="app-sidebar-header">
+        <Link className="brand-logo" to="/" onClick={() => handleMenuClick('Inicio')}>
+          <h1>Topicos</h1>
+        </Link>
+      </div>
+      <div className="menu">
+        {Object.keys(EstructuraMenu).map((categoryKey) => {
+          const category = EstructuraMenu[categoryKey];
+          return (
+            <React.Fragment key={categoryKey}>
+              <div className="menu-header">
+                <span className="menu-text">{category.etiqueta}</span>
+              </div>
+              <SubMenu items={category.items || []} onClick={handleMenuClick} />
+              <div className="menu-divider"></div>
+            </React.Fragment>
+          );
+        })}
+        <div className="menu-divider"></div>
+        <div className="menu-header">
+          <span className="menu-text">Cerrar Sesión</span>
         </div>
-      </CDBSidebarFooter>
-    </CDBSidebar>
+      </div>
+      <button className="app-sidebar-mobile-backdrop" data-dismiss="sidebar-mobile"></button>
+    </div>
   );
-};
+}
 
 export default Sidebar;

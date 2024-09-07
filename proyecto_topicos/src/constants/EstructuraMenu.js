@@ -5,8 +5,27 @@ export const EstructuraMenu = {
       {
         "etiqueta": "Inicio",
         "Path": "/",
-        "icon": "home", // Usa el nombre del ícono que quieres usar
-        "Hijos": null
+        "icon": "home",
+        "Hijos": []
+      }
+    ]
+  },
+
+  "Sucursales": {
+    "etiqueta": "Sucursales",
+    "items": [
+      {
+        "etiqueta": "Sucursales",
+        "Path": "#",
+        "icon": "",
+        "Hijos": [
+          {
+            "etiqueta": "Sucursal 1",
+            "Path": "/sucursal",
+            "icon": "",
+            "Hijos": []
+          }
+        ]
       }
     ]
   },
