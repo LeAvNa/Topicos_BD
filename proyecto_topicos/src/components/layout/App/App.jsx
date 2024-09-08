@@ -1,35 +1,33 @@
 import React from 'react';
-import Routes from '../../../route/index';
+import { Outlet } from 'react-router-dom'; // Utiliza Outlet para renderizar los componentes anidados
 import Sidebar from '../Sidebar';
+import '@mdi/font/css/materialdesignicons.min.css';
 import { Col, Row, Container } from 'react-bootstrap';
 
-function App(props) {
-  const route = Routes.find((route) => route.path === props.path);
-  const ComponentToRender = route.component;
-
+function App() {
   return (
     <Container fluid>
-      <Row style={{ height: '100vh', overflow: 'hidden' }}>
-        {/* Sidebar ocupa un ancho fijo */}
+      <Row style={{ height: '100vh', overflow: 'auto' }}> {/* Cambiado de 'hidden' a 'auto' */}
         <Col
-          md={3} // Cambia este valor si deseas un ancho diferente para la sidebar
+          md={3}
           style={{ padding: 0 }}
         >
           <Sidebar />
         </Col>
 
-        {/* Contenido principal ocupa el resto del espacio */}
         <Col
-          md={9} // Ajusta este valor en conjunto con el de la sidebar para un diseño equilibrado
+          md={9}
           style={{
             display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            overflowY: 'auto',
+            flexDirection: 'column', // Para asegurarse de que el contenido ocupe el espacio vertical
+            justifyContent: 'flex-start', // Cambiado de 'center' para que el contenido no se alinee en el centro
+            alignItems: 'stretch', // Asegura que el contenido ocupe todo el ancho
+            overflowY: 'auto', // Asegura que el contenido tenga scroll si es necesario
+            height: '100vh', // Permite que el scroll funcione en todo el alto
           }}
         >
           <div style={{ width: '100%', padding: '20px' }}>
-            <ComponentToRender />
+            <Outlet /> {/* Renderiza los componentes basados en la ruta actual */}
           </div>
         </Col>
       </Row>

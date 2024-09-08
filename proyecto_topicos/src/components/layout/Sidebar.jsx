@@ -44,10 +44,6 @@ function Sidebar() {
             </React.Fragment>
           );
         })}
-        <div className="menu-divider"></div>
-        <div className="menu-header">
-          <span className="menu-text">Cerrar Sesión</span>
-        </div>
       </div>
       <button className="app-sidebar-mobile-backdrop" data-dismiss="sidebar-mobile"></button>
     </div>

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { loadMessages } from '@progress/kendo-react-intl';
 import mensajesKendo from '../kendo/es.json';
-//import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the grid
-//import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied to the grid
 
-//Componentes
+// Componentes
 import App from '../../layout/App/App';
+import Inicio from '../../pages/inicio/Inicio';
+import Sucursal from '../../pages/sucursal';
 
 const Root = () => {
   loadMessages(mensajesKendo, 'es');
@@ -15,17 +15,11 @@ const Root = () => {
     <React.StrictMode>
       <BrowserRouter>
         <Routes>
-          <Route element={<App path="/" />} path='/' exact />
-          <Route element={<App path="/sucursal"/>} path='sucursal' exact />
-          <Route element={<App path="Usuarios" />} path="Usuarios" exact />
-          <Route element={<App path="Role" />} path="Role" exact />
-          <Route element={<App path="Inmobiliarias" />} path="Inmobiliarias" exact />
-          <Route element={<App path="Remates" />} path="Remates" exact />
-          <Route element={<App path="Adjudicados" />} path="Adjudicados" exact />
-          <Route element={<App path="Litigiosos" />} path="Litigiosos" exact />
-          <Route element={<App path="Litigios" />} path="Litigios" exact />
-          <Route element={<App path="Propiedades" />} path="Propiedades" exact />
-          <Route element={<App path="Reportes" />} path="Reportes" exact />
+          <Route path="/" element={<App />}>
+            <Route index element={<Inicio />} />
+            <Route path="sucursal" element={<Sucursal />} />
+            <Route path="sucursal/guardar" element={<Sucursal />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </React.StrictMode>

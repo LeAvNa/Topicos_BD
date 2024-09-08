@@ -13,20 +13,13 @@ export const EstructuraMenu = {
   },
 
   "Sucursales": {
-    "etiqueta": "Sucursales",
+    "etiqueta": "Sucursal #1",
     "items": [
       {
-        "etiqueta": "Sucursales",
-        "Path": "",  
+        "etiqueta": "Sucursal",
+        "Path": "/sucursal",  
         "icon": "office-building",
-        "Hijos": [
-          {
-            "etiqueta": "Sucursal 1",
-            "Path": "/sucursal",  
-            "icon": "store",
-            "Hijos": []
-          }
-        ]
+        "Hijos": []
       }
     ]
   },

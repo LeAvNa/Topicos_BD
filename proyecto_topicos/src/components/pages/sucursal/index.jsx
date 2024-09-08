@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import { Element } from 'react-scroll';
 
-import TablaSucursal from './buscar/index';
+import TablaSucursales from './buscar/index';
 import ModificarSucursal from './modificar';
 import GuardarSucursal from './guardar';
 
@@ -14,7 +14,7 @@ const Sucursales = () => {
   useEffect(() => {
     localStorage.setItem('activeMenu', 'Sucursales');
   }, []);
-  
+
   const mostrarTabla = () => {
     navigate('/sucursal');
     setEsEditar(false);
@@ -33,18 +33,17 @@ const Sucursales = () => {
   };
 
   return (
-    <h2>prueba</h2>
-    // <Element>
-    //   {mostrarFormulario ? 
-    //   (
-    //     esEditar ? 
-    //       <ModificarSucursal onCancel={mostrarTabla} /> 
-    //     : 
-    //       <GuardarSucursal onCancel={mostrarTabla} /> 
-    //   ) : (
-    //     <TablaSucursal mostrarFormulario={() => handleFormulario()} />
-    //   )}
-    // </Element> 
+    <Element>
+      {mostrarFormulario ? 
+      (
+        esEditar ? 
+          <ModificarSucursal onCancel={mostrarTabla} /> 
+        : 
+          <GuardarSucursal onCancel={mostrarTabla} /> 
+      ) : (
+        <TablaSucursales mostrarFormulario={() => handleFormulario()} />
+      )}
+    </Element> 
   );
 };
 
