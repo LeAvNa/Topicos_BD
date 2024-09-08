@@ -6,7 +6,7 @@ export const EstructuraMenu = {
       {
         "etiqueta": "Inicio",
         "Path": "/", 
-        "icon": "home",
+        "icon": "mdi-home",
         "Hijos": []
       }
     ]
@@ -18,7 +18,49 @@ export const EstructuraMenu = {
       {
         "etiqueta": "Sucursal",
         "Path": "/sucursal",  
-        "icon": "office-building",
+        "icon": "mdi mdi-storefront",
+        "Hijos": []
+      },
+      {
+        "etiqueta": "Clientes",
+        "Path": "/clientes",
+        "icon": "mdi-account",
+        "Hijos": []
+      },
+      {
+        "etiqueta": "Empleados",
+        "Path": "/empleados",
+        "icon": "mdi-account-group",
+        "Hijos": []
+      },
+      {
+        "etiqueta": "Ventas",
+        "Path": "/ventas",
+        "icon": "mdi-cart",
+        "Hijos": []
+      },
+      {
+        "etiqueta": "Cocteleria",
+        "Path": "/cocteleria",
+        "icon": "mdi-glass-cocktail",
+        "Hijos": []
+      },
+      {
+        "etiqueta": "Producto",
+        "Path": "/producto",
+        "icon": "mdi-package-variant",
+        "Hijos": []
+      },
+      {
+        "etiqueta": "Proveedor",
+        "Path": "/proveedor",
+        "icon": "mdi-truck",
+        "Hijos": []
+      },
+      {
+        "etiqueta": "Inventario",
+        "Path": "/inventario",
+        "icon": "mdi-clipboard-list",
         "Hijos": []
       }
     ]
