@@ -79,22 +79,23 @@ const TablaKendo = (
                 ))}
                 
                 { conAcciones ? 
-                    <Column field="Acciones" title="Acciones" width="120px" cell={({ dataItem }) => (
-                        <td style={style.acciones}>
-                            { verModificar ? 
-                                <BotonEditar
-                                    accion={() => funcionEditar(dataItem.id)}
-                                />
-                            : null }
-                            
-                            { verEliminar ? 
-                                <BotonEliminar 
-                                    accion={() => funcionEliminar(dataItem.id)}
-                                />
-                            : null }
-                        </td>
-                    )}/>
-                : null}
+    <Column field="Acciones" title="Acciones" width="120px" cell={({ dataItem }) => (
+        <td style={style.acciones}>
+            { verModificar ? 
+                <BotonEditar
+                    accion={() => funcionEditar(dataItem.idSucursal)} // Asegúrate de usar el id correcto
+                />
+            : null }
+            
+            { verEliminar ? 
+                <BotonEliminar 
+                    accion={() => funcionEliminar(dataItem.idSucursal)}  // Aquí también usa el id correcto
+                />
+            : null }
+        </td>
+    )}/>
+: null}
+
             </Grid>
         </>
     );

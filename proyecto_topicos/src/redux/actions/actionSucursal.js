@@ -44,7 +44,7 @@ export const eliminarSucursal = createAsyncThunk(
   "sucursal/eliminarSucursal",
   async (id, { rejectWithValue }) => {
     try {
-      const resp = await axios.delete(`http://localhost:12630/api/Sucursales/${id}`);
+      const resp = await axios.delete(`http://localhost:12630/api/Sucursales/Eliminar?idSucursal=${id}`);
       return resp.data;
     } catch (error) {
       return rejectWithValue(`Error: ${error.message}`);
