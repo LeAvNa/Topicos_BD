@@ -19,22 +19,33 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
             dispatch(obtenerSucursal(idSucursal))
                 .then((response) => {
                     console.log('Sucursal obtenida:', response.payload); // Imprime la sucursal obtenida en consola
-                    setSucursal(response.payload.response);
+                    const data = response.payload.response;
+                    
+                    // Formatear la fecha a 'YYYY-MM-DD' si no es nulo
+                    const formatFecha = (fecha) => {
+                        if (fecha) {
+                            const date = new Date(fecha);
+                            return date.toISOString().split('T')[0];
+                        }
+                        return '';
+                    };
+
+                    setSucursal(data);
                     formik.setValues({
-                        idSucursal: response.payload.response.idSucursal || '',
-                        razSoc: response.payload.response.razSoc || '',
-                        calle: response.payload.response.calle || '',
-                        num: response.payload.response.num || '',
-                        colonia: response.payload.response.col || '',
-                        ciudad: response.payload.response.ciudad || '',
-                        estado: response.payload.response.estado || '',
-                        pais: response.payload.response.pais || '',
-                        cp: response.payload.response.cp || '',
-                        presup: response.payload.response.presup || '',
-                        telefono: response.payload.response.telefonoSuc || '',
-                        rfc: response.payload.response.rfc || '',
-                        correo: response.payload.response.correo || '',
-                        fechaApertura: response.payload.response.fechaAp || ''
+                        idSucursal: data.idSucursal || '',
+                        razSoc: data.razSoc || '',
+                        calle: data.calle || '',
+                        num: data.num || '',
+                        col: data.col || '',
+                        ciudad: data.ciudad || '',
+                        estado: data.estado || '',
+                        pais: data.pais || '',
+                        cp: data.cp || '',
+                        presup: data.presup || '',
+                        telefonoSuc: data.telefonoSuc || '',
+                        rfc: data.rfc || '',
+                        correo: data.correo || '',
+                        fechaAp: formatFecha(data.fechaAp)
                     });
                 });
         }
@@ -45,16 +56,16 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
         razSoc: '',
         calle: '',
         num: '',
-        colonia: '',
+        col: '',
         ciudad: '',
         estado: '',
         pais: '',
         cp: '',
         presup: '',
-        telefono: '',
+        telefonoSuc: '',
         rfc: '',
         correo: '',
-        fechaApertura: ''
+        fechaAp: ''
     };
 
     const formik = useFormik({
@@ -63,16 +74,16 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
             razSoc: Yup.string().required('Es requerido'),
             calle: Yup.string().required('Es requerido'),
             num: Yup.string().required('Es requerido'),
-            colonia: Yup.string().required('Es requerido'),
+            col: Yup.string().required('Es requerido'),
             ciudad: Yup.string().required('Es requerido'),
             estado: Yup.string().required('Es requerido'),
             pais: Yup.string().required('Es requerido'),
             cp: Yup.string().required('Es requerido'),
             presup: Yup.number().required('Es requerido').positive('Debe ser un número positivo'),
-            telefono: Yup.string().required('Es requerido'),
+            telefonoSuc: Yup.string().required('Es requerido'),
             rfc: Yup.string().required('Es requerido'),
             correo: Yup.string().email('Email inválido').required('Es requerido'),
-            fechaApertura: Yup.date().required('Es requerido')
+            fechaAp: Yup.date().required('Es requerido')
         }),
         onSubmit: (values) => {
             dispatch(editarSucursal(values))
@@ -139,10 +150,10 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
 
                     <Col md={12}>
                         <InputField
-                            controlId="colonia"
+                            controlId="col"
                             label="Colonia:"
                             type="text"
-                            name="colonia"
+                            name="col"
                             formik={formik}
                         />
                     </Col>
@@ -199,10 +210,10 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
 
                     <Col md={12}>
                         <InputField
-                            controlId="telefono"
+                            controlId="telefonoSuc"
                             label="Teléfono:"
                             type="text"
-                            name="telefono"
+                            name="telefonoSuc"
                             formik={formik}
                         />
                     </Col>
@@ -229,10 +240,10 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
 
                     <Col md={12}>
                         <InputField
-                            controlId="fechaApertura"
+                            controlId="fechaAp"
                             label="Fecha de Apertura:"
                             type="date"
-                            name="fechaApertura"
+                            name="fechaAp"
                             formik={formik}
                         />
                     </Col>
