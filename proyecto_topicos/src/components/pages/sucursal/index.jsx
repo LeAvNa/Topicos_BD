@@ -10,6 +10,7 @@ const Sucursales = () => {
   const navigate = useNavigate();
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
   const [esEditar, setEsEditar] = useState(false);
+  const [idSucursal, setIdSucursal] = useState(null);
 
   useEffect(() => {
     localStorage.setItem('activeMenu', 'Sucursales');
@@ -19,29 +20,25 @@ const Sucursales = () => {
     navigate('/sucursal');
     setEsEditar(false);
     setMostrarFormulario(false);
+    setIdSucursal(null); // Resetear ID
   };
 
-  const handleFormulario = (esEditar = false) => {
+  const handleFormulario = (esEditar = false, idSucursal = null) => {
     setEsEditar(esEditar);
     setMostrarFormulario(true);
-
-    if (esEditar) {
-      navigate('/sucursal/modificar');
-    } else {
-      navigate('/sucursal/guardar');
-    }
+    setIdSucursal(idSucursal);
+    navigate('/sucursal/guardar'); // Usar la misma ruta para ambos formularios
   };
 
   return (
     <Element>
       {mostrarFormulario ? 
-      (
-        esEditar ? 
-          <ModificarSucursal onCancel={mostrarTabla} /> 
+        (esEditar ? 
+          <ModificarSucursal onCancel={mostrarTabla} idSucursal={idSucursal} /> 
         : 
           <GuardarSucursal onCancel={mostrarTabla} /> 
-      ) : (
-        <TablaSucursales mostrarFormulario={() => handleFormulario()} />
+        ) : (
+        <TablaSucursales mostrarFormulario={handleFormulario} />
       )}
     </Element> 
   );

@@ -19,7 +19,7 @@ export const obtenerSucursal = createAsyncThunk(
   "sucursal/obtenerSucursal",
   async (id, { rejectWithValue }) => {
     try {
-      const resp = await axios.get(`http://localhost:12630/api/Sucursales/${id}`);
+      const resp = await axios.get(`http://localhost:12630/api/Sucursales/Obtener/${id}`);
       return resp.data;
     } catch (error) {
       return rejectWithValue(`Error: ${error.message}`);
@@ -56,7 +56,7 @@ export const editarSucursal = createAsyncThunk(
   "sucursal/editarSucursal",
   async (data, { rejectWithValue }) => {
     try {
-      const resp = await axios.put(`http://localhost:12630/api/Sucursales/${data.id}`, data);
+      const resp = await axios.put('http://localhost:12630/api/Sucursales/Editar', data); // Eliminar la concatenación del id
       return resp.data;
     } catch (error) {
       return rejectWithValue(`Error: ${error.message}`);

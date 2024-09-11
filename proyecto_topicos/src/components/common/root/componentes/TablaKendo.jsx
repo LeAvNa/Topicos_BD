@@ -5,7 +5,6 @@ import {
   GridColumn as Column,
   GridToolbar
 } from '@progress/kendo-react-grid';
-
 import { BotonEditar, BotonNuevo, BotonEliminar } from "./Botones";
 import { style } from '../../../../constants/Constantes.js';
 
@@ -46,6 +45,16 @@ const TablaKendo = (
         });
     };
 
+    // Función general para manejar editar y eliminar
+    const handleAction = (actionType, id) => {
+        console.log(`ID ${actionType}:`, id); // Imprime la ID en consola
+        if (actionType === 'editar') {
+            funcionEditar(id);
+        } else if (actionType === 'eliminar') {
+            funcionEliminar(id);
+        }
+    };
+
     return (
         <>
             <Grid
@@ -74,27 +83,27 @@ const TablaKendo = (
                     {/* Removed Export Buttons */}
                 </GridToolbar>
 
-                { estructuraTabla.columns.map((item) => (
+                {estructuraTabla.columns.map((item) => (
                     <Column field={item.field} title={item.title} key={item.key} filter="text" filterCell={{ operator: "contains" }} cell={item.cell ? item.cell : null} />
                 ))}
                 
                 { conAcciones ? 
-    <Column field="Acciones" title="Acciones" width="120px" cell={({ dataItem }) => (
-        <td style={style.acciones}>
-            { verModificar ? 
-                <BotonEditar
-                    accion={() => funcionEditar(dataItem.idSucursal)} // Asegúrate de usar el id correcto
-                />
-            : null }
-            
-            { verEliminar ? 
-                <BotonEliminar 
-                    accion={() => funcionEliminar(dataItem.idSucursal)}  // Aquí también usa el id correcto
-                />
-            : null }
-        </td>
-    )}/>
-: null}
+                    <Column field="Acciones" title="Acciones" width="120px" cell={({ dataItem }) => (
+                        <td style={style.acciones}>
+                            { verModificar ? 
+                                <BotonEditar
+                                    accion={() => handleAction('editar', dataItem.idSucursal)} // Usa la función general
+                                />
+                            : null }
+                            
+                            { verEliminar ? 
+                                <BotonEliminar 
+                                    accion={() => handleAction('eliminar', dataItem.idSucursal)}  // Usa la función general
+                                />
+                            : null }
+                        </td>
+                    )}/>
+                : null}
 
             </Grid>
         </>

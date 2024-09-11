@@ -59,13 +59,11 @@ const TablaSucursales = ({ mostrarFormulario }) => {
   };
 
   const handleEditar = (idSucursal) => {
-    navigate('/sucursal/' + idSucursal);
-    mostrarFormulario(idSucursal);
+    mostrarFormulario(true, idSucursal);
   };
 
   const handleNuevo = () => {
-    navigate('/sucursal/Guardar');
-    mostrarFormulario('');
+    mostrarFormulario(false);
   };
 
   return (
@@ -74,7 +72,7 @@ const TablaSucursales = ({ mostrarFormulario }) => {
         estructuraTabla={EstructuraSucursales}
         funcionEditar={handleEditar}
         funcionNuevo={handleNuevo}
-        funcionEliminar={handleEliminar}  // Pasamos la función eliminar
+        funcionEliminar={handleEliminar}
         data={dataState}
         ordenamientoInicial={ordenamientoInicial}
       />

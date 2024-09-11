@@ -5,7 +5,7 @@ import { useFormik } from 'formik';
 import Swal from 'sweetalert2';
 import * as Yup from 'yup';
 
-// Importa las acciones relacionadas con sucursal en lugar de empresa
+// Importa las acciones relacionadas con sucursal
 import { obtenerSucursal, editarSucursal } from '../../../../redux/actions/actionSucursal';
 import InputField from '../../../common/root/componentes/Input';
 
@@ -13,7 +13,33 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
     const dispatch = useDispatch();
     const [sucursal, setSucursal] = useState(null);
 
-    // Valores iniciales del formulario para la sucursal
+    useEffect(() => {
+        console.log('ID recibida:', idSucursal); // Imprime la ID en consola
+        if (idSucursal) {
+            dispatch(obtenerSucursal(idSucursal))
+                .then((response) => {
+                    console.log('Sucursal obtenida:', response.payload); // Imprime la sucursal obtenida en consola
+                    setSucursal(response.payload.response);
+                    formik.setValues({
+                        idSucursal: response.payload.response.idSucursal || '',
+                        razSoc: response.payload.response.razSoc || '',
+                        calle: response.payload.response.calle || '',
+                        num: response.payload.response.num || '',
+                        colonia: response.payload.response.col || '',
+                        ciudad: response.payload.response.ciudad || '',
+                        estado: response.payload.response.estado || '',
+                        pais: response.payload.response.pais || '',
+                        cp: response.payload.response.cp || '',
+                        presup: response.payload.response.presup || '',
+                        telefono: response.payload.response.telefonoSuc || '',
+                        rfc: response.payload.response.rfc || '',
+                        correo: response.payload.response.correo || '',
+                        fechaApertura: response.payload.response.fechaAp || ''
+                    });
+                });
+        }
+    }, [dispatch, idSucursal]);
+
     const initialValues = {
         idSucursal: '',
         razSoc: '',
@@ -24,23 +50,29 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
         estado: '',
         pais: '',
         cp: '',
-        presupuesto: '',
+        presup: '',
         telefono: '',
         rfc: '',
         correo: '',
         fechaApertura: ''
     };
-    // Configuración de validación con Yup
+
     const formik = useFormik({
-        initialValues: sucursal != null ? sucursal : initialValues,
+        initialValues: initialValues,
         validationSchema: Yup.object({
-            nombre: Yup.string()
-                .required('Es requerido')
-                .max(50, 'Máximo 50 caracteres'),
-            direccion: Yup.string()
-                .required('Es requerido')
-                .max(100, 'Máximo 100 caracteres'),
-            // Agregar validaciones adicionales para otros campos según sea necesario
+            razSoc: Yup.string().required('Es requerido'),
+            calle: Yup.string().required('Es requerido'),
+            num: Yup.string().required('Es requerido'),
+            colonia: Yup.string().required('Es requerido'),
+            ciudad: Yup.string().required('Es requerido'),
+            estado: Yup.string().required('Es requerido'),
+            pais: Yup.string().required('Es requerido'),
+            cp: Yup.string().required('Es requerido'),
+            presup: Yup.number().required('Es requerido').positive('Debe ser un número positivo'),
+            telefono: Yup.string().required('Es requerido'),
+            rfc: Yup.string().required('Es requerido'),
+            correo: Yup.string().email('Email inválido').required('Es requerido'),
+            fechaApertura: Yup.date().required('Es requerido')
         }),
         onSubmit: (values) => {
             dispatch(editarSucursal(values))
@@ -60,15 +92,6 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
         enableReinitialize: true
     });
 
-    useEffect(() => {
-        if (idSucursal !== '') {
-            dispatch(obtenerSucursal(idSucursal))
-                .then((response) => {
-                    setSucursal(response.payload);
-                });
-        }
-    }, [dispatch, idSucursal]);
-
     const LimpiarCampos = () => {
         formik.resetForm();
         onCancel();
@@ -83,7 +106,8 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
             <Row>
                 <h2>Editar Sucursal</h2>
                 <Form onSubmit={formik.handleSubmit}>
-                <Col md={12}>
+                    {/* Campos del formulario */}
+                    <Col md={12}>
                         <InputField
                             controlId="razSoc"
                             label="Razón Social:"
@@ -165,10 +189,10 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
 
                     <Col md={12}>
                         <InputField
-                            controlId="presupuesto"
+                            controlId="presup"
                             label="Presupuesto:"
                             type="number"
-                            name="presupuesto"
+                            name="presup"
                             formik={formik}
                         />
                     </Col>
@@ -212,7 +236,6 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
                             formik={formik}
                         />
                     </Col>
-
                     <Col md={12} style={{ paddingTop: "10px" }}>
                         <div className="mt-3 d-flex justify-content-end">
                             <Button
