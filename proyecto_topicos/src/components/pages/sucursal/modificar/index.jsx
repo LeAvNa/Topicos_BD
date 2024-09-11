@@ -15,17 +15,21 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
 
     // Valores iniciales del formulario para la sucursal
     const initialValues = {
-        nombre: '',
-        direccion: '',
-        estado: '',
-        municipio: '',
-        codigoPostal: '',
+        idSucursal: '',
+        razSoc: '',
+        calle: '',
+        num: '',
         colonia: '',
+        ciudad: '',
+        estado: '',
+        pais: '',
+        cp: '',
+        presupuesto: '',
         telefono: '',
-        responsable: '', // Cambiado a responsable de la sucursal
-        horario: '',     // Campo de horario de la sucursal
+        rfc: '',
+        correo: '',
+        fechaApertura: ''
     };
-
     // Configuración de validación con Yup
     const formik = useFormik({
         initialValues: sucursal != null ? sucursal : initialValues,
@@ -79,56 +83,32 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
             <Row>
                 <h2>Editar Sucursal</h2>
                 <Form onSubmit={formik.handleSubmit}>
-                    <Col md={12}>
+                <Col md={12}>
                         <InputField
-                            controlId="nombre"
-                            label="Nombre:"
+                            controlId="razSoc"
+                            label="Razón Social:"
                             type="text"
-                            name="nombre"
+                            name="razSoc"
                             formik={formik}
                         />
                     </Col>
 
                     <Col md={12}>
                         <InputField
-                            controlId="direccion"
-                            label="Dirección:"
+                            controlId="calle"
+                            label="Calle:"
                             type="text"
-                            name="direccion"
+                            name="calle"
                             formik={formik}
                         />
                     </Col>
 
                     <Col md={12}>
                         <InputField
-                            controlId="estado"
-                            label="Estado:"
-                            type="select"
-                            name="estado"
-                            formik={formik}
-                            options={[]} // Ajusta opciones de estado según tus datos
-                            placeholder="Seleccione un estado"
-                        />
-                    </Col>
-
-                    <Col md={12}>
-                        <InputField
-                            controlId="municipio"
-                            label="Municipio:"
-                            type="select"
-                            name="municipio"
-                            formik={formik}
-                            options={[]} // Ajusta opciones de municipio según tus datos
-                            placeholder="Seleccione un municipio"
-                        />
-                    </Col>
-
-                    <Col md={12}>
-                        <InputField
-                            controlId="codigoPostal"
-                            label="Código Postal:"
+                            controlId="num"
+                            label="Número:"
                             type="text"
-                            name="codigoPostal"
+                            name="num"
                             formik={formik}
                         />
                     </Col>
@@ -137,11 +117,59 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
                         <InputField
                             controlId="colonia"
                             label="Colonia:"
-                            type="select"
+                            type="text"
                             name="colonia"
                             formik={formik}
-                            options={[]} // Ajusta opciones de colonia según tus datos
-                            placeholder="Seleccione una colonia"
+                        />
+                    </Col>
+
+                    <Col md={12}>
+                        <InputField
+                            controlId="ciudad"
+                            label="Ciudad:"
+                            type="text"
+                            name="ciudad"
+                            formik={formik}
+                        />
+                    </Col>
+
+                    <Col md={12}>
+                        <InputField
+                            controlId="estado"
+                            label="Estado:"
+                            type="text"
+                            name="estado"
+                            formik={formik}
+                        />
+                    </Col>
+
+                    <Col md={12}>
+                        <InputField
+                            controlId="pais"
+                            label="País:"
+                            type="text"
+                            name="pais"
+                            formik={formik}
+                        />
+                    </Col>
+
+                    <Col md={12}>
+                        <InputField
+                            controlId="cp"
+                            label="Código Postal:"
+                            type="text"
+                            name="cp"
+                            formik={formik}
+                        />
+                    </Col>
+
+                    <Col md={12}>
+                        <InputField
+                            controlId="presupuesto"
+                            label="Presupuesto:"
+                            type="number"
+                            name="presupuesto"
+                            formik={formik}
                         />
                     </Col>
 
@@ -157,20 +185,30 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
 
                     <Col md={12}>
                         <InputField
-                            controlId="responsable"
-                            label="Responsable:"
+                            controlId="rfc"
+                            label="RFC:"
                             type="text"
-                            name="responsable"
+                            name="rfc"
                             formik={formik}
                         />
                     </Col>
 
                     <Col md={12}>
                         <InputField
-                            controlId="horario"
-                            label="Horario:"
-                            type="text"
-                            name="horario"
+                            controlId="correo"
+                            label="Correo:"
+                            type="email"
+                            name="correo"
+                            formik={formik}
+                        />
+                    </Col>
+
+                    <Col md={12}>
+                        <InputField
+                            controlId="fechaApertura"
+                            label="Fecha de Apertura:"
+                            type="date"
+                            name="fechaApertura"
                             formik={formik}
                         />
                     </Col>

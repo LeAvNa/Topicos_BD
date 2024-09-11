@@ -31,7 +31,8 @@ export const agregarSucursal = createAsyncThunk(
   "sucursal/agregarSucursal",
   async (data, { rejectWithValue }) => {
     try {
-      const resp = await axios.post('http://localhost:12630/api/Sucursales', data);
+      const resp = await axios.post('http://localhost:12630/api/Sucursales/Guardar', data);
+      console.log(resp.data);
       return resp.data;
     } catch (error) {
       return rejectWithValue(`Error: ${error.message}`);

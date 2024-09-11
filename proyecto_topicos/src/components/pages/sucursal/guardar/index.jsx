@@ -13,7 +13,8 @@ const GuardarSucursal = ({ onCancel }) => {
 
     // Valores iniciales del formulario
     const initialValues = {
-        razonSocial: '',
+        idSucursal: '',
+        razSoc: '',
         calle: '',
         num: '',
         colonia: '',
@@ -29,7 +30,7 @@ const GuardarSucursal = ({ onCancel }) => {
     };
 
     const validationSchema = Yup.object({
-        razonSocial: Yup.string().required('Es requerido'),
+        razSoc: Yup.string().required('Es requerido'),  // Cambio realizado aquí
         calle: Yup.string().required('Es requerido'),
         num: Yup.string().required('Es requerido'),
         colonia: Yup.string().required('Es requerido'),
@@ -48,8 +49,13 @@ const GuardarSucursal = ({ onCancel }) => {
         initialValues: initialValues,
         validationSchema: validationSchema,
         onSubmit: (values) => {
+            // Generar un número aleatorio entre 1 y 1000
+            const randomId = Math.floor(Math.random() * 1000) + 1;
+            values.idSucursal = randomId;
+            console.log(values);
             dispatch(agregarSucursal(values))
                 .then((response) => {
+                    console.log(response);
                     if (!response.error) {
                         Swal.fire({
                             title: "Guardado Correcto",
@@ -83,10 +89,10 @@ const GuardarSucursal = ({ onCancel }) => {
                 <Form onSubmit={formik.handleSubmit}>
                     <Col md={12}>
                         <InputField
-                            controlId="razonSocial"
+                            controlId="razSoc"
                             label="Razón Social:"
                             type="text"
-                            name="razonSocial"
+                            name="razSoc"
                             formik={formik}
                         />
                     </Col>
