@@ -1,7 +1,7 @@
 
 export const EstructuraSucursales = {
     columns: [
-      { field: "razonSocial", key: "razonSocial", title: "Razon Social" },
+      { field: "razSoc", key: "razSoc", title: "Razon Social" },
       { field: "pais", key: "pais", title: "País" },
       { field: "rfc", key: "rfc", title: "RFC" },
       { field: "correo", key: "correo", title: "Correo" },

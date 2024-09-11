@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 import * as Yup from 'yup';
 
 // Importa las acciones relacionadas con sucursal en lugar de empresa
-import { obtenerSurcursal, editarSucursal } from '../../../../redux/actions/actionSucursal';
+import { obtenerSucursal, editarSucursal } from '../../../../redux/actions/actionSucursal';
 import InputField from '../../../common/root/componentes/Input';
 
 const ModificarSucursal = ({ onCancel, idSucursal }) => {
@@ -58,7 +58,7 @@ const ModificarSucursal = ({ onCancel, idSucursal }) => {
 
     useEffect(() => {
         if (idSucursal !== '') {
-            dispatch(obtenerSurcursal(idSucursal))
+            dispatch(obtenerSucursal(idSucursal))
                 .then((response) => {
                     setSucursal(response.payload);
                 });

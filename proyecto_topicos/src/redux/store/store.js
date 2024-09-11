@@ -9,15 +9,16 @@ import { getSucursalReducer } from "../slice/sliceSucursal";
 import { getVentaReducer } from "../slice/sliceVenta";
 
 export default configureStore({
-    reducer:{
-        getCliente: getClienteReducer,
-        getCocteleria: getCocteleriaReducer,
-        getEmpleado: getEmpleadoReducer,
-        getInventario: getInventarioReducer,
-        getProducto: getProductoReducer,
-        getProveedor: getProveedorReducer,
-        getSucursal: getSucursalReducer,
-        getVenta: getVentaReducer,
-    },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware({ serializableCheck: false })
+  reducer: {
+    getCliente: getClienteReducer,
+    getCocteleria: getCocteleriaReducer,
+    getEmpleado: getEmpleadoReducer,
+    getInventario: getInventarioReducer,
+    getProducto: getProductoReducer,
+    getProveedor: getProveedorReducer,
+    getSucursal: getSucursalReducer,
+    getVenta: getVentaReducer,
+  },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({ serializableCheck: false }),
 });

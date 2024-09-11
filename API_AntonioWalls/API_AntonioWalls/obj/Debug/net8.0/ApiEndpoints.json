@@ -1,0 +1,76 @@
+[
+  {
+    "ContainingType": "API_AntonioWalls.Controllers.SucursalesController",
+    "Method": "Editar",
+    "RelativePath": "api/Sucursales/Editar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newSucursal",
+        "Type": "API_AntonioWalls.DTO.SucursalesDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers.SucursalesController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Sucursales/Eliminar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idSucursal",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers.SucursalesController",
+    "Method": "Guardar",
+    "RelativePath": "api/Sucursales/Guardar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newSucursal",
+        "Type": "API_AntonioWalls.DTO.SucursalesDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers.SucursalesController",
+    "Method": "Lista",
+    "RelativePath": "api/Sucursales/Lista",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers.SucursalesController",
+    "Method": "Obtener",
+    "RelativePath": "api/Sucursales/Obtener/{idSucursal}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idSucursal",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
