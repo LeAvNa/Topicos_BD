@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\models\\sucursales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\models\\sucursales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\controllers\\sucursalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\controllers\\sucursalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\dto\\sucursalesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\dto\\sucursalesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\controllers_instancia1\\productoinstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\controllers_instancia1\\productoinstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\models\\linkedservercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\models\\linkedservercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,101 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SucursalesController.cs",
-              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers\\SucursalesController.cs",
-              "RelativeDocumentMoniker": "API_AntonioWalls\\Controllers\\SucursalesController.cs",
-              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers\\SucursalesController.cs",
-              "RelativeToolTip": "API_AntonioWalls\\Controllers\\SucursalesController.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAIwDUAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T02:31:32.687Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Sucursales.cs",
-              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Models\\Sucursales.cs",
-              "RelativeDocumentMoniker": "API_AntonioWalls\\Models\\Sucursales.cs",
-              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Models\\Sucursales.cs",
-              "RelativeToolTip": "API_AntonioWalls\\Models\\Sucursales.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwB8AAAAnAAAAAAAAAA==",
+              "Title": "ProductoInstancia1.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers_Instancia1\\ProductoInstancia1.cs",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\Controllers_Instancia1\\ProductoInstancia1.cs",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers_Instancia1\\ProductoInstancia1.cs",
+              "RelativeToolTip": "API_AntonioWalls\\Controllers_Instancia1\\ProductoInstancia1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T02:29:29.313Z",
+              "WhenOpened": "2024-09-12T04:53:32.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Program.cs",
               "RelativeDocumentMoniker": "API_AntonioWalls\\Program.cs",
               "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Program.cs",
               "RelativeToolTip": "API_AntonioWalls\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAACCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T02:25:59.274Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\appsettings.json",
-              "RelativeDocumentMoniker": "API_AntonioWalls\\appsettings.json",
-              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\appsettings.json",
-              "RelativeToolTip": "API_AntonioWalls\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-11T02:18:19.29Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LinkedServerContext.cs",
-              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Models\\LinkedServerContext.cs",
-              "RelativeDocumentMoniker": "API_AntonioWalls\\Models\\LinkedServerContext.cs",
-              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Models\\LinkedServerContext.cs",
-              "RelativeToolTip": "API_AntonioWalls\\Models\\LinkedServerContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T02:04:10.514Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 100,
-      "FloatingWindowState": {
-        "Id": "ea6309e9-205b-4c1f-89ed-30a6c8c2c173",
-        "Display": 0,
-        "X": -81,
-        "Y": 505,
-        "Width": 1202,
-        "Height": 988,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SucursalesDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\DTO\\SucursalesDTO.cs",
-              "RelativeDocumentMoniker": "API_AntonioWalls\\DTO\\SucursalesDTO.cs",
-              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\DTO\\SucursalesDTO.cs",
-              "RelativeToolTip": "API_AntonioWalls\\DTO\\SucursalesDTO.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwBwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T03:08:53.28Z",
+              "WhenOpened": "2024-09-11T02:25:59.274Z",
               "EditorCaption": ""
             }
           ]

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using API_AntonioWalls.Models;
 using System.Text.Json.Serialization;
+using API_AntonioWalls.Models_Instancia1;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +12,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Aquí es donde se agregan los contextos de la base de datos, en este caso son llamados LinkedServerContext
+//Sucursal1Context y Sucursal2Context
+
 builder.Services.AddDbContext<LinkedServerContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("cadenaSQL")));
+builder.Services.AddDbContext<Sucursal1Context>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("cadenaSQL2")));
 
 builder.Services.AddControllers().AddJsonOptions(opt =>
 {

@@ -72,5 +72,15 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.SucursalesInstancia1",
+    "Method": "Lista",
+    "RelativePath": "api/SucursalesInstancia1/Lista",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]
