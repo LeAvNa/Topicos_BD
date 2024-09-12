@@ -13,43 +13,49 @@ const GuardarSucursal = ({ onCancel }) => {
 
     // Valores iniciales del formulario
     const initialValues = {
-        razonSocial: '',
+        idSucursal: '',
+        razSoc: '',
         calle: '',
         num: '',
-        colonia: '',
+        col: '',
         ciudad: '',
         estado: '',
         pais: '',
         cp: '',
-        presupuesto: '',
-        telefono: '',
+        presup: '',
+        telefonoSuc: '',
         rfc: '',
         correo: '',
-        fechaApertura: ''
+        fechaAp: ''
     };
 
     const validationSchema = Yup.object({
-        razonSocial: Yup.string().required('Es requerido'),
-        calle: Yup.string().required('Es requerido'),
-        num: Yup.string().required('Es requerido'),
-        colonia: Yup.string().required('Es requerido'),
-        ciudad: Yup.string().required('Es requerido'),
-        estado: Yup.string().required('Es requerido'),
-        pais: Yup.string().required('Es requerido'),
-        cp: Yup.string().required('Es requerido'),
-        presupuesto: Yup.number().required('Es requerido').positive('Debe ser un número positivo'),
-        telefono: Yup.string().required('Es requerido'),
-        rfc: Yup.string().required('Es requerido'),
-        correo: Yup.string().email('Email inválido').required('Es requerido'),
-        fechaApertura: Yup.date().required('Es requerido')
+        razSoc: Yup.string().required('Es requerido'),
+            calle: Yup.string().required('Es requerido'),
+            num: Yup.string().required('Es requerido'),
+            col: Yup.string().required('Es requerido'),
+            ciudad: Yup.string().required('Es requerido'),
+            estado: Yup.string().required('Es requerido'),
+            pais: Yup.string().required('Es requerido'),
+            cp: Yup.string().required('Es requerido'),
+            presup: Yup.number().required('Es requerido').positive('Debe ser un número positivo'),
+            telefonoSuc: Yup.string().required('Es requerido'),
+            rfc: Yup.string().required('Es requerido'),
+            correo: Yup.string().email('Email inválido').required('Es requerido'),
+            fechaAp: Yup.date().required('Es requerido')
     });
 
     const formik = useFormik({
         initialValues: initialValues,
         validationSchema: validationSchema,
         onSubmit: (values) => {
+            // Generar un número aleatorio entre 1 y 1000
+            const randomId = Math.floor(Math.random() * 1000) + 1;
+            values.idSucursal = randomId;
+            console.log(values);
             dispatch(agregarSucursal(values))
                 .then((response) => {
+                    console.log(response);
                     if (!response.error) {
                         Swal.fire({
                             title: "Guardado Correcto",
@@ -81,12 +87,12 @@ const GuardarSucursal = ({ onCancel }) => {
                     Nueva Sucursal
                 </h2>
                 <Form onSubmit={formik.handleSubmit}>
-                    <Col md={12}>
+                <Col md={12}>
                         <InputField
-                            controlId="razonSocial"
+                            controlId="razSoc"
                             label="Razón Social:"
                             type="text"
-                            name="razonSocial"
+                            name="razSoc"
                             formik={formik}
                         />
                     </Col>
@@ -113,10 +119,10 @@ const GuardarSucursal = ({ onCancel }) => {
 
                     <Col md={12}>
                         <InputField
-                            controlId="colonia"
+                            controlId="col"
                             label="Colonia:"
                             type="text"
-                            name="colonia"
+                            name="col"
                             formik={formik}
                         />
                     </Col>
@@ -163,20 +169,20 @@ const GuardarSucursal = ({ onCancel }) => {
 
                     <Col md={12}>
                         <InputField
-                            controlId="presupuesto"
+                            controlId="presup"
                             label="Presupuesto:"
                             type="number"
-                            name="presupuesto"
+                            name="presup"
                             formik={formik}
                         />
                     </Col>
 
                     <Col md={12}>
                         <InputField
-                            controlId="telefono"
+                            controlId="telefonoSuc"
                             label="Teléfono:"
                             type="text"
-                            name="telefono"
+                            name="telefonoSuc"
                             formik={formik}
                         />
                     </Col>
@@ -203,10 +209,10 @@ const GuardarSucursal = ({ onCancel }) => {
 
                     <Col md={12}>
                         <InputField
-                            controlId="fechaApertura"
+                            controlId="fechaAp"
                             label="Fecha de Apertura:"
                             type="date"
-                            name="fechaApertura"
+                            name="fechaAp"
                             formik={formik}
                         />
                     </Col>

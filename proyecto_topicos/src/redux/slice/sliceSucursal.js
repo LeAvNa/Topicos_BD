@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { listarSucursal, obtenerSurcursal } from '../actions/actionSucursal';
+import { listarSucursal, obtenerSucursal } from '../actions/actionSucursal';
 
 const initialState = {
   sucursales: [],
@@ -9,7 +9,7 @@ const initialState = {
 };
 
 const SucursalSlice = createSlice({
-  name: "getSucursal",
+  name: "sucursal",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
@@ -29,17 +29,17 @@ const SucursalSlice = createSlice({
         state.loading = false;
         state.error = action.error.message;
       })
-      .addCase(obtenerSurcursal.pending, (state) => {
+      .addCase(obtenerSucursal.pending, (state) => {
         state.sucursal = {};
         state.loading = true;
         state.error = null;
       })
-      .addCase(obtenerSurcursal.fulfilled, (state, action) => {
+      .addCase(obtenerSucursal.fulfilled, (state, action) => {
         state.sucursal = action.payload;
         state.loading = false;
         state.error = null;
       })
-      .addCase(obtenerSurcursal.rejected, (state, action) => {
+      .addCase(obtenerSucursal.rejected, (state, action) => {
         state.sucursal = {};
         state.loading = false;
         state.error = action.error.message;

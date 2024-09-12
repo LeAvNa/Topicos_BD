@@ -1,0 +1,6 @@
+@API_AntonioWalls_HostAddress = http://localhost:5029
+
+GET {{API_AntonioWalls_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
