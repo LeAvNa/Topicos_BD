@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { listarProveedor, obtenerProveedor } from '../actions/actionProveedor';
+import { listarProveedor, obtenerProveedor } from '../actions/actionProveedorA';
 
 const initialState = {
   proveedores: [],
@@ -8,7 +8,7 @@ const initialState = {
   error: null,
 };
 
-const ProveedorSlice = createSlice({
+const ProveedorASlice = createSlice({
   name: "getProveedor",
   initialState,
   reducers: {},
@@ -47,4 +47,4 @@ const ProveedorSlice = createSlice({
   },
 });
 
-export const getProveedorReducer = ProveedorSlice.reducer;
+export const getProveedorAReducer = ProveedorASlice.reducer;

@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 import * as Yup from 'yup';
 
 // Importa las acciones relacionadas con sucursal
-import { obtenerSucursal, editarSucursal } from '../../../../redux/actions/actionSucursal';
+import { obtenerSucursal, editarSucursal } from '../../../../redux/actions/actionSucursalA';
 import InputField from '../../../common/root/componentes/Input';
 
 const ModificarSucursal = ({ onCancel, idSucursal }) => {

@@ -1,23 +1,37 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { getClienteReducer } from "../slice/sliceCliente";
-import { getCocteleriaReducer } from "../slice/sliceCocteleria";
-import { getEmpleadoReducer } from "../slice/sliceEmpleado";
-import { getInventarioReducer } from "../slice/sliceInventario";
-import { getProductoReducer } from "../slice/sliceProducto";
-import { getProveedorReducer } from "../slice/sliceProveedor";
-import { getSucursalReducer } from "../slice/sliceSucursal";
-import { getVentaReducer } from "../slice/sliceVenta";
+import { getClienteAReducer } from "../slice/sliceClienteA";
+import { getClienteBReducer } from "../slice/sliceClienteB";
+import { getCocteleriaAReducer } from "../slice/sliceCocteleriaA";
+import { getEmpleadoAReducer } from "../slice/sliceEmpleadoA";
+import { getEmpleadoBReducer } from "../slice/sliceEmpleadoB";
+import { getInventarioAReducer } from "../slice/sliceInventarioA";
+import { getInventarioBReducer } from "../slice/sliceInventarioB";
+import { getProductoAReducer } from "../slice/sliceProductoA";
+import { getProductoBReducer } from "../slice/sliceProductoB";
+import { getProveedorAReducer } from "../slice/sliceProveedorA";
+import { getProveedorBReducer } from "../slice/sliceProveedorB";
+import { getSucursalAReducer } from "../slice/sliceSucursalA";
+import { getSucursalBReducer } from "../slice/sliceSucursalB";
+import { getVentaAReducer } from "../slice/sliceVentaA";
+import { getVentaBReducer } from "../slice/sliceVentaB";
 
 export default configureStore({
   reducer: {
-    getCliente: getClienteReducer,
-    getCocteleria: getCocteleriaReducer,
-    getEmpleado: getEmpleadoReducer,
-    getInventario: getInventarioReducer,
-    getProducto: getProductoReducer,
-    getProveedor: getProveedorReducer,
-    getSucursal: getSucursalReducer,
-    getVenta: getVentaReducer,
+    getClienteA: getClienteAReducer,
+    getClienteB: getClienteBReducer,
+    getCocteleriaA: getCocteleriaAReducer,
+    getEmpleadoA: getEmpleadoAReducer,
+    getEmpleadoB: getEmpleadoBReducer,
+    getInventarioA: getInventarioAReducer,
+    getInventarioB: getInventarioBReducer,
+    getProductoA: getProductoAReducer,
+    getProductoB: getProductoBReducer,
+    getProveedorA: getProveedorAReducer,
+    getProveedorB: getProveedorBReducer,
+    getSucursalA: getSucursalAReducer,
+    getSucursalB: getSucursalBReducer,
+    getVentaA: getVentaAReducer,
+    getVentaB: getVentaBReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({ serializableCheck: false }),

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { listarSucursal, obtenerSucursal } from '../actions/actionSucursal';
+import { listarSucursal, obtenerSucursal } from '../actions/actionSucursalA';
 
 const initialState = {
   sucursales: [],
@@ -8,7 +8,7 @@ const initialState = {
   error: null,
 };
 
-const SucursalSlice = createSlice({
+const SucursalASlice = createSlice({
   name: "sucursal",
   initialState,
   reducers: {},
@@ -47,4 +47,4 @@ const SucursalSlice = createSlice({
   },
 });
 
-export const getSucursalReducer = SucursalSlice.reducer;
+export const getSucursalAReducer = SucursalASlice.reducer;

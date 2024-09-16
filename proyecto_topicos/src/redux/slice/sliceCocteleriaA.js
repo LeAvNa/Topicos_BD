@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { obtenerCocteleria, listarCocteleria } from '../actions/actionCocteleria';
+import { obtenerCocteleria, listarCocteleria } from '../actions/actionCocteleriaA';
 
 const initialState = {
   coctelerias: [],
@@ -8,7 +8,7 @@ const initialState = {
   error: null,
 };
 
-const CocteleriaSlice = createSlice({
+const CocteleriaASlice = createSlice({
   name: "getCocteleria",
   initialState,
   reducers: {},
@@ -47,4 +47,4 @@ const CocteleriaSlice = createSlice({
   },
 });
 
-export const getCocteleriaReducer = CocteleriaSlice.reducer;
+export const getCocteleriaAReducer = CocteleriaASlice.reducer;

@@ -5,7 +5,7 @@ import { useFormik } from 'formik';
 import Swal from 'sweetalert2';
 import * as Yup from 'yup';
 
-import { agregarSucursal } from '../../../../redux/actions/actionSucursal';
+import { agregarSucursal } from '../../../../redux/actions/actionSucursalA';
 import InputField from '../../../common/root/componentes/Input';
 
 const GuardarSucursal = ({ onCancel }) => {

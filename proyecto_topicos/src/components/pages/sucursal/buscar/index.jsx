@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import { EstructuraSucursales } from "../../../../constants/EstructuraTabla";
 import TablaKendo from "../../../common/root/componentes/TablaKendo";
-import { listarSucursal, eliminarSucursal } from '../../../../redux/actions/actionSucursal';
+import { listarSucursal, eliminarSucursal } from '../../../../redux/actions/actionSucursalA';
 import Swal from 'sweetalert2';
 
 const ordenamientoInicial = [

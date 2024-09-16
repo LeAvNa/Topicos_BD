@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { listarInventario, obtenerInventario } from '../actions/actionInventario';
+import { listarInventario, obtenerInventario } from '../actions/actionInventarioB';
 
 const initialState = {
   inventarios: [],
@@ -8,7 +8,7 @@ const initialState = {
   error: null,
 };
 
-const InventarioSlice = createSlice({
+const InventarioBSlice = createSlice({
   name: "getInventario",
   initialState,
   reducers: {},
@@ -47,4 +47,4 @@ const InventarioSlice = createSlice({
   },
 });
 
-export const getInventarioReducer = InventarioSlice.reducer;
+export const getInventarioBReducer = InventarioBSlice.reducer;

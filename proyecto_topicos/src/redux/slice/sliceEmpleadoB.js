@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { listarEmpleado, obtenerEmpleado } from '../actions/actionEmpleado';
+import { listarEmpleado, obtenerEmpleado } from '../actions/actionEmpleadoB';
 
 const initialState = {
   empleados: [],
@@ -8,7 +8,7 @@ const initialState = {
   error: null,
 };
 
-const EmpleadoSlice = createSlice({
+const EmpleadoBSlice = createSlice({
   name: "getEmpleado",
   initialState,
   reducers: {},
@@ -47,4 +47,4 @@ const EmpleadoSlice = createSlice({
   },
 });
 
-export const getEmpleadoReducer = EmpleadoSlice.reducer;
+export const getEmpleadoBReducer = EmpleadoBSlice.reducer;
