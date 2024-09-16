@@ -7,6 +7,7 @@ import mensajesKendo from '../kendo/es.json';
 import App from '../../layout/App/App';
 import Inicio from '../../pages/inicio/Inicio';
 import Sucursal from '../../pages/sucursal';
+import Sucursal2 from '../../pages/tienda2/sucursal';
 
 const Root = () => {
   loadMessages(mensajesKendo, 'es');
@@ -19,6 +20,8 @@ const Root = () => {
             <Route index element={<Inicio />} />
             <Route path="sucursal" element={<Sucursal />} />
             <Route path="sucursal/guardar" element={<Sucursal />} />
+            <Route path="sucursalB" element={<Sucursal2 />} />
+            <Route path="sucursalB/guardar" element={<Sucursal2 />} />
           </Route>
         </Routes>
       </BrowserRouter>
