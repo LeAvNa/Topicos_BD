@@ -1,5 +1,227 @@
 [
   {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.CategoriaInstancia1",
+    "Method": "Editar",
+    "RelativePath": "api/CategoriaInstancia1/Editar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newCategoria",
+        "Type": "API_AntonioWalls.DTOsucursal1.DTOCategoria",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.CategoriaInstancia1",
+    "Method": "Eliminar",
+    "RelativePath": "api/CategoriaInstancia1/Eliminar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCategoria",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.CategoriaInstancia1",
+    "Method": "Guardar",
+    "RelativePath": "api/CategoriaInstancia1/Guardar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newCategoria",
+        "Type": "API_AntonioWalls.DTOsucursal1.DTOCategoria",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.CategoriaInstancia1",
+    "Method": "Lista",
+    "RelativePath": "api/CategoriaInstancia1/Lista",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.CategoriaInstancia1",
+    "Method": "Obtener",
+    "RelativePath": "api/CategoriaInstancia1/Obtener/{idCategoria}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCategoria",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.ClienteInstancia1",
+    "Method": "Editar",
+    "RelativePath": "api/ClienteInstancia1/Editar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newCliente",
+        "Type": "API_AntonioWalls.DTOsucursal1.DTOCliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.ClienteInstancia1",
+    "Method": "Eliminar",
+    "RelativePath": "api/ClienteInstancia1/Eliminar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.ClienteInstancia1",
+    "Method": "Guardar",
+    "RelativePath": "api/ClienteInstancia1/Guardar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newCliente",
+        "Type": "API_AntonioWalls.DTOsucursal1.DTOCliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.ClienteInstancia1",
+    "Method": "Lista",
+    "RelativePath": "api/ClienteInstancia1/Lista",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.ClienteInstancia1",
+    "Method": "Obtener",
+    "RelativePath": "api/ClienteInstancia1/Obtener/{idCliente}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.CocteleriaInstancia1",
+    "Method": "Editar",
+    "RelativePath": "api/CocteleriaInstancia1/Editar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newCocteleria",
+        "Type": "API_AntonioWalls.DTOsucursal1.DTOCocteleria",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.CocteleriaInstancia1",
+    "Method": "Eliminar",
+    "RelativePath": "api/CocteleriaInstancia1/Eliminar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCocteleria",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.CocteleriaInstancia1",
+    "Method": "Guardar",
+    "RelativePath": "api/CocteleriaInstancia1/Guardar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newCocteleria",
+        "Type": "API_AntonioWalls.DTOsucursal1.DTOCocteleria",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.CocteleriaInstancia1",
+    "Method": "Lista",
+    "RelativePath": "api/CocteleriaInstancia1/Lista",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_AntonioWalls.Controllers_Instancia1.CocteleriaInstancia1",
+    "Method": "Obtener",
+    "RelativePath": "api/CocteleriaInstancia1/Obtener/{idCocteleria}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCocteleria",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_AntonioWalls.Controllers.SucursalesController",
     "Method": "Editar",
     "RelativePath": "api/Sucursales/Editar",
