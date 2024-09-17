@@ -3,12 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\controllers_instancia1\\productoinstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\controllers_instancia1\\productoinstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\controllers_instancia1\\empleadoinstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\controllers_instancia1\\empleadoinstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\controllers_instancia1\\clienteinstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\controllers_instancia1\\clienteinstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\controllers_instancia1\\categoriainstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\controllers_instancia1\\categoriainstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\dtosucursal1\\dtoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\dtosucursal1\\dtoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\models_instancia1\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\models_instancia1\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\dtosucursal1\\dtogenera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\dtosucursal1\\dtogenera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\dtosucursal1\\dtodetventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\dtosucursal1\\dtodetventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\controllers_instancia1\\cocteleriainstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\controllers_instancia1\\cocteleriainstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\dtosucursal1\\dtococteleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\dtosucursal1\\dtococteleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\api_antoniowalls.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\api_antoniowalls.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\models_instancia1\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\models_instancia1\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\controllers_instancia1\\sucursalesinstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\controllers_instancia1\\sucursalesinstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\dtosucursal1\\dtosucursales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\dtosucursal1\\dtosucursales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|c:\\users\\antonio walls\\documents\\crud_topicosbd\\topicos_bd\\api_antoniowalls\\api_antoniowalls\\controllers_instancia1\\productoinstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE59FAC4-7D76-4113-A112-E33D2380F4C9}|API_AntonioWalls\\API_AntonioWalls.csproj|solutionrelative:api_antoniowalls\\controllers_instancia1\\productoinstancia1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,21 +73,198 @@
       "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 512,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Empleado.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Models_Instancia1\\Empleado.cs",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\Models_Instancia1\\Empleado.cs",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Models_Instancia1\\Empleado.cs",
+              "RelativeToolTip": "API_AntonioWalls\\Models_Instancia1\\Empleado.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T05:33:51.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EmpleadoInstancia1.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers_Instancia1\\EmpleadoInstancia1.cs",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\Controllers_Instancia1\\EmpleadoInstancia1.cs",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers_Instancia1\\EmpleadoInstancia1.cs",
+              "RelativeToolTip": "API_AntonioWalls\\Controllers_Instancia1\\EmpleadoInstancia1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T05:30:29.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DTOCocteleria.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\DTOsucursal1\\DTOCocteleria.cs",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\DTOsucursal1\\DTOCocteleria.cs",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\DTOsucursal1\\DTOCocteleria.cs",
+              "RelativeToolTip": "API_AntonioWalls\\DTOsucursal1\\DTOCocteleria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:37:40.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CocteleriaInstancia1.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers_Instancia1\\CocteleriaInstancia1.cs",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\Controllers_Instancia1\\CocteleriaInstancia1.cs",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers_Instancia1\\CocteleriaInstancia1.cs",
+              "RelativeToolTip": "API_AntonioWalls\\Controllers_Instancia1\\CocteleriaInstancia1.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAgwIYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:37:36.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DTOEmpleado.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\DTOsucursal1\\DTOEmpleado.cs",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\DTOsucursal1\\DTOEmpleado.cs",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\DTOsucursal1\\DTOEmpleado.cs",
+              "RelativeToolTip": "API_AntonioWalls\\DTOsucursal1\\DTOEmpleado.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwCoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:21:39.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "API_AntonioWalls.csproj",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\API_AntonioWalls.csproj",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\API_AntonioWalls.csproj",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\API_AntonioWalls.csproj",
+              "RelativeToolTip": "API_AntonioWalls\\API_AntonioWalls.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-13T19:35:27.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoriaInstancia1.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers_Instancia1\\CategoriaInstancia1.cs",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\Controllers_Instancia1\\CategoriaInstancia1.cs",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers_Instancia1\\CategoriaInstancia1.cs",
+              "RelativeToolTip": "API_AntonioWalls\\Controllers_Instancia1\\CategoriaInstancia1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T03:57:36.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DTODetVenta.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\DTOsucursal1\\DTODetVenta.cs",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\DTOsucursal1\\DTODetVenta.cs",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\DTOsucursal1\\DTODetVenta.cs",
+              "RelativeToolTip": "API_AntonioWalls\\DTOsucursal1\\DTODetVenta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T06:07:43.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteInstancia1.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers_Instancia1\\ClienteInstancia1.cs",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\Controllers_Instancia1\\ClienteInstancia1.cs",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers_Instancia1\\ClienteInstancia1.cs",
+              "RelativeToolTip": "API_AntonioWalls\\Controllers_Instancia1\\ClienteInstancia1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T05:33:12.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Mappings\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\Mappings\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Mappings\\MappingProfile.cs",
+              "RelativeToolTip": "API_AntonioWalls\\Mappings\\MappingProfile.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAmwFcAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T04:59:45.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SucursalesInstancia1.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers_Instancia1\\SucursalesInstancia1.cs",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\Controllers_Instancia1\\SucursalesInstancia1.cs",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers_Instancia1\\SucursalesInstancia1.cs",
+              "RelativeToolTip": "API_AntonioWalls\\Controllers_Instancia1\\SucursalesInstancia1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T04:09:35.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DTOSucursales.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\DTOsucursal1\\DTOSucursales.cs",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\DTOsucursal1\\DTOSucursales.cs",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\DTOsucursal1\\DTOSucursales.cs",
+              "RelativeToolTip": "API_AntonioWalls\\DTOsucursal1\\DTOSucursales.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T04:09:25.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Models_Instancia1\\Categoria.cs",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\Models_Instancia1\\Categoria.cs",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Models_Instancia1\\Categoria.cs",
+              "RelativeToolTip": "API_AntonioWalls\\Models_Instancia1\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T04:03:23.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DTOGenera.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\DTOsucursal1\\DTOGenera.cs",
+              "RelativeDocumentMoniker": "API_AntonioWalls\\DTOsucursal1\\DTOGenera.cs",
+              "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\DTOsucursal1\\DTOGenera.cs",
+              "RelativeToolTip": "API_AntonioWalls\\DTOsucursal1\\DTOGenera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T03:58:13.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "ProductoInstancia1.cs",
               "DocumentMoniker": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers_Instancia1\\ProductoInstancia1.cs",
               "RelativeDocumentMoniker": "API_AntonioWalls\\Controllers_Instancia1\\ProductoInstancia1.cs",
               "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Controllers_Instancia1\\ProductoInstancia1.cs",
               "RelativeToolTip": "API_AntonioWalls\\Controllers_Instancia1\\ProductoInstancia1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T04:53:32.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T04:53:32.66Z"
             },
             {
               "$type": "Document",
@@ -41,7 +274,7 @@
               "RelativeDocumentMoniker": "API_AntonioWalls\\Program.cs",
               "ToolTip": "C:\\Users\\Antonio Walls\\Documents\\CRUD_TopicosBD\\Topicos_BD\\API_AntonioWalls\\API_AntonioWalls\\Program.cs",
               "RelativeToolTip": "API_AntonioWalls\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAACCAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-11T02:25:59.274Z",
               "EditorCaption": ""

@@ -5,6 +5,8 @@ C:\Users\Antonio Walls\Documents\CRUD_TopicosBD\Topicos_BD\API_AntonioWalls\API_
 C:\Users\Antonio Walls\Documents\CRUD_TopicosBD\Topicos_BD\API_AntonioWalls\API_AntonioWalls\bin\Debug\net8.0\API_AntonioWalls.runtimeconfig.json
 C:\Users\Antonio Walls\Documents\CRUD_TopicosBD\Topicos_BD\API_AntonioWalls\API_AntonioWalls\bin\Debug\net8.0\API_AntonioWalls.dll
 C:\Users\Antonio Walls\Documents\CRUD_TopicosBD\Topicos_BD\API_AntonioWalls\API_AntonioWalls\bin\Debug\net8.0\API_AntonioWalls.pdb
+C:\Users\Antonio Walls\Documents\CRUD_TopicosBD\Topicos_BD\API_AntonioWalls\API_AntonioWalls\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Antonio Walls\Documents\CRUD_TopicosBD\Topicos_BD\API_AntonioWalls\API_AntonioWalls\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Antonio Walls\Documents\CRUD_TopicosBD\Topicos_BD\API_AntonioWalls\API_AntonioWalls\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Antonio Walls\Documents\CRUD_TopicosBD\Topicos_BD\API_AntonioWalls\API_AntonioWalls\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\Antonio Walls\Documents\CRUD_TopicosBD\Topicos_BD\API_AntonioWalls\API_AntonioWalls\bin\Debug\net8.0\Humanizer.dll
