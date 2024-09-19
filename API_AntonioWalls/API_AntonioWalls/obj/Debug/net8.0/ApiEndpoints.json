@@ -430,7 +430,7 @@
   {
     "ContainingType": "API_AntonioWalls.Controllers_Instancia1.ProveedoresInstancia1",
     "Method": "Obtener",
-    "RelativePath": "api/ProveedoresInstancia1/Obtener/{idProducto}",
+    "RelativePath": "api/ProveedoresInstancia1/Obtener/{idProveedor}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -438,11 +438,6 @@
       {
         "Name": "idProveedor",
         "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "idProducto",
-        "Type": "",
         "IsRequired": true
       }
     ],
