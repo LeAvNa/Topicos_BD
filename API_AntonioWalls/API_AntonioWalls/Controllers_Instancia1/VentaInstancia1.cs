@@ -1,21 +1,19 @@
-﻿using API_AntonioWalls.Models_Instancia1;
-using Microsoft.AspNetCore.Cors;
+﻿using API_AntonioWalls.DTOsucursal1;
+using API_AntonioWalls.Models_Instancia1;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using API_AntonioWalls.DTOsucursal1;
-using AutoMapper;
 
 namespace API_AntonioWalls.Controllers_Instancia1
 {
-    [EnableCors("ReglasCors")]
     [Route("api/[controller]")]
     [ApiController]
-    public class EmpleadoInstancia1 : ControllerBase
+    public class VentaInstancia1 : ControllerBase
     {
         public readonly Sucursal1Context sucursal1Context;
-        public readonly IMapper _mapper;
+        private readonly IMapper _mapper;
 
-        public EmpleadoInstancia1(Sucursal1Context context, IMapper mapper)
+        public VentaInstancia1(Sucursal1Context context, IMapper mapper)
         {
             sucursal1Context = context;
             _mapper = mapper;
@@ -27,43 +25,43 @@ namespace API_AntonioWalls.Controllers_Instancia1
         {
             try
             {
-                var empleadoInstancia1s = sucursal1Context.Empleados.ToList();
-                List<DTOEmpleado> empleadoDtos = null;
+                var VentaInstancia1s = sucursal1Context.Ventas.ToList();
+                List<DTOVenta> ventaDtos = null;
 
                 try
                 {
-                    empleadoDtos = _mapper.Map<List<DTOEmpleado>>(empleadoInstancia1s);
+                    ventaDtos = _mapper.Map<List<DTOVenta>>(VentaInstancia1s);
                 }
                 catch (AutoMapperMappingException ex)
                 {
-                    return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = ex.Message, response = new List<DTOEmpleado>() });
+                    return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = ex.Message, response = new List<DTOVenta>() });
                 }
 
-                return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok", Response = empleadoDtos });
+                return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok", Response = ventaDtos });
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = ex.Message, response = new List<DTOEmpleado>() });
+                return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = ex.Message, response = new List<DTOVenta>() });
             }
         }
 
         [HttpGet]
-        [Route("Obtener/{idEmpleado:int}")]
-        public IActionResult Obtener(int idEmpleado)
+        [Route("Obtener/{idVenta:int}")]
+        public IActionResult Obtener(int idVenta)
         {
             try
             {
 
 
-                var empleado = sucursal1Context.Empleados.Where(i => i.IdEmpleado == idEmpleado).FirstOrDefault();
+                var venta = sucursal1Context.Ventas.Where(i => i.IdVenta == idVenta).FirstOrDefault();
 
-                if (empleado == null)
+                if (venta == null)
                 {
-                    return BadRequest("Empleado no encontrado");
+                    return BadRequest("Venta no encontrada");
                 }
 
-                var dtoEmpleado = _mapper.Map<DTOEmpleado>(empleado);
-                return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok", Response = dtoEmpleado });
+                var dtoVenta = _mapper.Map<DTOVenta>(venta);
+                return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok", Response = dtoVenta });
             }
             catch (Exception ex)
             {
@@ -72,13 +70,13 @@ namespace API_AntonioWalls.Controllers_Instancia1
         }
         [HttpPost]
         [Route("Guardar")]
-        public IActionResult Guardar([FromBody] DTOEmpleado newEmpleado)
+        public IActionResult Guardar([FromBody] DTOVenta newVenta)
         {
             try
             {
-                var empleado = _mapper.Map<Empleado>(newEmpleado);
+                var venta = _mapper.Map<Venta>(newVenta);
 
-                sucursal1Context.Empleados.Add(empleado);
+                sucursal1Context.Ventas.Add(venta);
                 sucursal1Context.SaveChanges();
 
                 return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok" });
@@ -92,20 +90,20 @@ namespace API_AntonioWalls.Controllers_Instancia1
 
         [HttpPut]
         [Route("Editar")]
-        public IActionResult Editar([FromBody] DTOEmpleado newEmpleado)
+        public IActionResult Editar([FromBody] DTOVenta newVenta)
         {
-            var empleado = sucursal1Context.Empleados.Find(newEmpleado.IdEmpleado);
-            if (empleado == null)
+            var venta = sucursal1Context.Ventas.Find(newVenta.IdVenta);
+            if (venta == null)
             {
-                return BadRequest("El empleado no ha sido encontrado, no es posible editar");
+                return BadRequest("La venta no ha sido encontrado, no es posible editar");
             }
 
             try
             {
                 // Solo actualiza los campos que no sean nulos
-                _mapper.Map(newEmpleado, empleado);
+                _mapper.Map(newVenta, venta);
 
-                sucursal1Context.Empleados.Update(empleado);
+                sucursal1Context.Ventas.Update(venta);
                 sucursal1Context.SaveChanges();
                 return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok" });
             }
@@ -118,18 +116,18 @@ namespace API_AntonioWalls.Controllers_Instancia1
 
         [HttpDelete]
         [Route("Eliminar")]
-        public IActionResult Eliminar(int idEmpleado)
+        public IActionResult Eliminar(int idVenta)
         {
-            var empleado = sucursal1Context.Empleados.Find(idEmpleado);
+            var venta = sucursal1Context.Empleados.Find(idVenta);
 
-            if (empleado == null)
+            if (venta == null)
             {
-                return BadRequest("Empleado no encontrado");
+                return BadRequest("Venta no encontrado");
             }
 
             try
             {
-                sucursal1Context.Empleados.Remove(empleado);
+                sucursal1Context.Empleados.Remove(venta);
                 sucursal1Context.SaveChanges();
                 return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok" });
             }
@@ -138,5 +136,6 @@ namespace API_AntonioWalls.Controllers_Instancia1
                 return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = ex.Message });
             }
         }
+
     }
 }
