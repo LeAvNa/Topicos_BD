@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 using API_AntonioWalls.Models_Instancia1;
 using AutoMapper;
 using API_AntonioWalls.Mappings;
+using Microsoft.Extensions.DependencyInjection;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,7 @@ builder.Services.AddSwaggerGen();
 
 //agregando automapper
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
+builder.Services.AddAutoMapper(typeof(MappingProfile2).Assembly);
 
 //Aquí es donde se agregan los contextos de la base de datos, en este caso son llamados LinkedServerContext
 //Sucursal1Context y Sucursal2Context

@@ -7,7 +7,7 @@ public partial class Venta
 {
     public int IdVenta { get; set; }
 
-    public DateOnly? FechaVenta { get; set; }
+    public DateTime? FechaVenta { get; set; }
 
     public decimal? Subtotal { get; set; }
 
